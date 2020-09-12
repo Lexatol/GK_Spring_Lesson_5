@@ -1,7 +1,7 @@
-package geekbrains.controllers;
+package com.geekbrains.controllers;
 
-import geekbrains.entities.Book;
-import geekbrains.services.BooksService;
+import com.geekbrains.services.BooksService;
+import com.geekbrains.entities.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
