@@ -1,7 +1,7 @@
-package geekbrains.services;
+package com.geekbrains.services;
 
-import geekbrains.entities.Book;
-import geekbrains.repositories.BooksRepository;
+import com.geekbrains.entities.Book;
+import com.geekbrains.repositories.BooksRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

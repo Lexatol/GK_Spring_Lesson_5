@@ -2,7 +2,7 @@
 
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Add New Book</title>
+    <title>Панель администратора</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <script type="text/javascript" th:src="@{/webjars/jquery/3.3.1/dist/jquery.min.js}"></script>
@@ -12,25 +12,10 @@
     <link type="text/css" rel="stylesheet" th:href="@{/resources/css/main.css}"/>
 </head>
 
-<html>
-<div class="fluid-container">
-    <nav>
-        <div th:replace="~{my-menu :: mymenu(addBook)}">
-        </div>
-    </nav>
+<body>
+<div class="container">
+    <h1>Access Denied: You don't have permission</h1>
+    <a th:hfer="@{/}">Back to Home Page</a>
 </div>
-    <body>
-        <form th:action="@{/books/add}" th:object="${book}" method="post">
-            First Name: <input type="text" th:field="*{name_book}"/>
-            <br>
-            <div class="submit">
-                <button name="addBook" type="submit">Add book</button>
-            </div>
-
-        </form>
-    </body>
-<footer>
-    <div th:insert="~{my-footer :: foot}">
-    </div>
-</footer>
+</body>
 </html>

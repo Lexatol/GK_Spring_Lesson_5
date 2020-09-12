@@ -1,7 +1,7 @@
-package geekbrains.repositories;
+package com.geekbrains.repositories;
 
 
-import geekbrains.entities.Book;
+import com.geekbrains.entities.Book;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
